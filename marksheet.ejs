@@ -1,0 +1,39 @@
+<html>  
+
+    <title>marksheet</title>
+    <center><br><br>    
+<form action="/logo/checked">
+        
+
+
+        <table align="center" border="1" cellspacing="1"><caption><FONT SIZE="4" color=" dark pink"><B>::STUDENT DESCRIPTION::</B></FONT></caption>
+            <tr><th>ROLL NO:<INPUT required pattern="[0-9]{10}"type="text" name="rn"></th></tr>
+            <tr><th>STUDENT NAME:<INPUT required pattern="[ A-Z]+" type="TEXT" name="sn"></th></tr>
+            <tr><th>FATHER  NAME:<INPUT  required pattern="[ A-Z]+" type="TEXT" name="fn"></th></tr>
+            <tr><th>DOB:<Input  required type="date" name="dob"></th></tr>
+            <tr><th>Gender:<input  required type="radio" value="MALE" id="gm" name="ML">MALE<input  required  type="radio" value="FEMALE" id="gf" name="ML">FEMALE</th></tr>
+            <tr><th>SCHOOL NAME:<SELEct  required name="stn"><option></option>
+                <option>Govt hr sec school no.2</option>
+                <option>Aditya Birla Public School</option>
+                <option>Agarwal Public School</option>
+                <option>Agrasen Vidyalaya Higher Sec School</option>
+                <option>GHS NAYAGAON GHATIGAON (9-10)</option>
+                <option>Aacharya Shri Ram Middle School</option>
+                <option>Adarsh Boudhik Higher Secondary School</option>
+                <option>Atomic Energy Central School</option>
+                <option>Ayudh Nirmani Sr Sec School</option></SELEct></th></tr>
+            <tr><th><FONT SIZE="5" color=" dark pink">::MARKS::</FONT></th></tr>
+            <tr><th>HINDI:<INPUT   required onkeyup="s1()" pattern="[0-9]{,3}" TYPE="TEXT" name="H"></th></tr>
+            <tr><th>ENGLISH:<INPUT  required onkeyup="s2()" pattern="[0-9]{,3}" TYPE="TEXT" name="E"></th></tr>
+            <tr><th>MATHS:<INPUT  required  onkeyup="s3()"  pattern="[0-9]{,3}" TYPE="TEXT" name="M"></th></tr>
+            <tr><th>PHYSICS:<INPUT  required onkeyup="s4()"  pattern="[0-9]{,3}" TYPE="TEXT" name="P"></th></tr>
+            <tr><th>CHEMISTRY:<INPUT  required onkeyup="s5()" pattern="[0-9]{,3}" TYPE="TEXT" name="C"></th></tr>
+                <TR><TH><input type="submit" name="submit"><input type="reset" name="reset"></TH></TR>
+        </table>
+
+</form>
+
+        <div><%=msg%></div>
+
+    </center><br>
+    </html>
